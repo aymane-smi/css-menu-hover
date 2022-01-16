@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    height: 100vh;
+}
+h1{
+    font-size: 120px;
+    color: #ccc;
+    margin:0;
+    padding: 0;
+    position: relative;
+}
+h1::before{
+    content: "TEXT";
+    font-size: 120px;
+    position:absolute;
+    top:0;
+    left:0;
+    color: #262626;
+    width: 0%;
+    overflow: hidden;
+    transition: all 500ms;
+}
+h1:hover::before{
+    width: 100%;
+}

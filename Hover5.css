@@ -1,0 +1,23 @@
+body{
+    background: gray;
+}
+ul{
+    margin: 20% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    list-style: none;
+    color: white;
+    font-size: 120px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: all 800ms;
+    opacity: 1;
+}
+ul:hover li{
+    transform: rotate(45deg) translateY(-200px);
+    filter: blur(20px);
+    opacity: 0;
+}
